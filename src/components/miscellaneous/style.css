@@ -1,0 +1,31 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+#file-upload {
+  display: none;
+}
+.custom-file-upload {
+  /* border: 1px solid #ccc; */
+  background-color: red;
+  height: 29px;
+  width: 70px;
+  line-height: 7px;
+  /* line-height: 7px; */
+  margin-top: 16px;
+  color: White;
+  background-color: teal;
+  border-radius: 5px;
+  margin-left: 5px;
+  /* display: inline-block; */
+  /* padding: 6px 12px; */
+  cursor: pointer;
+  text-align: center;
+}
+@media only screen and (min-width: 480px) {
+  .custom-file-upload {
+    line-height: 25px;
+  }
+}
