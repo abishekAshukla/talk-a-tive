@@ -18,7 +18,8 @@ import UpdateGroupChatModal from "./UpdateGroupChatModal";
 import { ChatState } from "../../Context/ChatProvider";
 import "./style.css";
 
-const ENDPOINT = "https://backendapis.vercel.app"
+const ENDPOINT = "https://shukla-apis.glitch.me"
+// const ENDPOINT = "https://backendapis.vercel.app"
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {

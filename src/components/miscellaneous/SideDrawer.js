@@ -145,7 +145,7 @@ const SideDrawer = () => {
                   <NotificationBadge count={notification.length} effect={Effect.SCALE}/>
                     <BellIcon fontSize="2xl" m={1}/>
                 </MenuButton>
-                <MenuList bg="black" pl={2}>
+                <MenuList bg={dark===false?"white":"black"} pl={2}>
                   {!notification.length && "no new messages"}
                   {notification.map((notif) => (
                      <MenuItem

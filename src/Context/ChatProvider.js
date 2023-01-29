@@ -10,7 +10,7 @@ const ChatProvider = ({ children}) => {
     const [chats, setChats] = useState([])
     const [notification, setNotification] = useState([])
     const [dark, setDark] = useState(false)
-    const host = "https://backendapis.vercel.app"
+    const host = "https://shukla-apis.glitch.me"
 
     const history = useHistory();
 
