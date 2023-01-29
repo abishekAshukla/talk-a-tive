@@ -43,7 +43,6 @@ const Signup = () => {
       return;
     }
     // console.log(pics);
-    let a = 3;
 
     // if (a === 3) {
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
@@ -101,6 +100,7 @@ const Signup = () => {
         isClosable: true,
         position: "bottom",
       });
+      setLoading(false);
       return;
     }
     try {

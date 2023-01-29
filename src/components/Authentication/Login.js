@@ -12,7 +12,6 @@ import { ChatState } from "../../Context/ChatProvider";
 const Login = () => {
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState();
-  const [phnumber, setPhnumber] = useState();
   const [password, setPassword] = useState();
   const [loading, setLoading] = useState(false);
   const toast = useToast();
@@ -124,11 +123,22 @@ const Login = () => {
         colorScheme={"red"}
         width={"100%"}
         onClick={() => {
-          setEmail("guest@example.com");
-          setPassword("12345678");
+          setEmail("guest@testing.com");
+          setPassword("96782Guest.com");
         }}
       >
-        Get Guest User Credentials
+        Get Guest1 User Credentials
+      </Button>
+      <Button
+        variant={"solid"}
+        colorScheme={"red"}
+        width={"100%"}
+        onClick={() => {
+          setEmail("guest2@testing.com");
+          setPassword("96782Guest.com");
+        }}
+      >
+        Get Guest2 User Credentials
       </Button>
     </VStack>
   );
