@@ -19,7 +19,7 @@ const Signup = () => {
   const [confirmpassword, setConfirmpassword] = useState();
   const [pic, setPic] = useState();
   const [phonenumber, setphonenumber] = useState("");
-  const [stateofsignup, setStateofsignup] = useState("otp");
+  const [stateofsignup, setStateofsignup] = useState("submit");
   const [otp, setOtp] = useState();
   const [loading, setLoading] = useState(false);
   const toast = useToast();
@@ -272,7 +272,7 @@ const Signup = () => {
     const json = await response.json();
     if (json.message === "You can signup with this") {
       requestOTP();
-      // setStateofsignup("verify");
+      console.log("you can signup");
     }
   };
 
@@ -307,6 +307,16 @@ const Signup = () => {
               setEmail(e.target.value);
             }}
             value={email}
+          />
+        </FormControl>
+        <FormControl id="phoennumber" isRequired>
+          <FormLabel>Phone Number</FormLabel>
+          <Input
+            placeholder="Enter your phone Number"
+            onChange={(e) => {
+              setphonenumber(e.target.value);
+            }}
+            value={phonenumber}
           />
         </FormControl>
         <FormControl id="password" isRequired>
